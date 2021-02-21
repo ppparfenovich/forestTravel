@@ -3,11 +3,23 @@
 	<head>
 		<meta charset="UTF-8" />
 		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-		<title>Contacts</title>
+		<title>Контакты - агенство Форест Тревел</title>
+        <meta name="description" content="Описание страницы">
+		<meta name="keywords" content="Ключевые слова, фразы">
 		<link rel="stylesheet" href="./css/main.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-	</head>
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+		<link rel="manifest" href="/img/favicons/site.webmanifest">
+		<link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="/img/favicons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-config" content="/img/favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">	
+    </head>
 	<body>
 		<header class="header-inner">
 			<div class="container">
@@ -43,9 +55,9 @@
                 <div class="contact-row">
                     <div class="contact-info">
                         <div class="contact-block">
-                            <h2 class="contact-title">
+                            <h3 class="contact-title">
                                 Телефон и адрес
-                            </h2>
+                            </h3>
                             <div class="contact-block-body">
                                 <ul class="contact-list">
                                     <li class="contact-list-icon phone">
@@ -61,26 +73,26 @@
                             </div>
                         </div>
                         <div class="contact-block">
-                            <h2 class="contact-title">
+                            <h3 class="contact-title">
                                 Карта
-                            </h2>
+                            </h3>
                             <div class="contact-block-body">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2247.447545874258!2d37.79332355176357!3d55.71597408044803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab59b3be61f9b%3A0x71e8ca6a8cffd5fb!2z0KDRj9C30LDQvdGB0LrQuNC5INC_0YAuLCA1NCwgMTEyLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTA5Mzc3!5e0!3m2!1sru!2sby!4v1613474268034!5m2!1sru!2sby" width="470" height="345" frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
                             </div>
                         </div>
                     </div>
                     <form class="contact-form">
-                        <h2 class="contact-title">Заявка на подбор тура</h2>
-                        <div class="form-group">
-                            <h3 class="form-group-title">Личные данные</h3>
+                        <h3 class="contact-title">Заявка на подбор тура</h3>
+                        <fieldset class="form-group">
+                            <legend class="form-group-title">Личные данные</legend>
                             <input class="input" type="text" placeholder="Введите имя" required>
                             <div class="form-group-row">
                                 <input class="input" type="tel" placeholder="Телефон" required>
                                 <input class="input" type="email" placeholder="Email" required>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <h3 class="form-group-title">Количество человек для тура</h3>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <legend class="form-group-title">Количество человек для тура</legend>
                             <label class="radio-row">
                                 <input name="number-of-people" class="real-radio" type="radio">
                                 <span class="custom-radio"></span>
@@ -96,9 +108,9 @@
                                 <span class="custom-radio"></span>
                                 <span>11 человек и более</span> 
                             </label>
-                        </div>
-                        <div class="form-group">
-                            <h3 class="form-group-title">Какие направления вам интересны</h3>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <legend class="form-group-title">Какие направления вам интересны</legend>
                             <label class="checkbox-row">
                                 <input name="1" class="real-checkbox" type="checkbox">
                                 <span class="custom-checkbox"></span>
@@ -127,7 +139,7 @@
                                     Комбинированные: море, горы, города, лес.
                                 </span>
                             </label>
-                        </div>
+                        </fieldset>
                         <input class="button" type="submit" value="Отправить заявку">
                     </form>
                 </div>
