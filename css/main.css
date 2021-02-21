@@ -149,6 +149,7 @@ input {
 }
 
 .header-title {
+    margin: 16px 0 20px;
     font-weight: 700;
     font-size: 60px;
 }
@@ -177,7 +178,7 @@ input {
     transform: translateX(-50%);
     content: "";
     display: block;
-    width: 24px;
+    width: 18px;
     height: 24px;
     background-image: url('./../img/icons/arrow-down.svg');
 }
@@ -263,15 +264,16 @@ input {
 }
 
 .footer .logo {
-    margin-bottom: 26px;
+    margin-bottom: 28px;
 }
 
 .footer-copyright p {
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.64;
 }
 
 .footer-widgets-wrapper {
+    padding-top: 10px;
     display: flex;
 }
 
