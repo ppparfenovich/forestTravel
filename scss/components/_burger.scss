@@ -1,0 +1,40 @@
+.burger {
+    position: relative;
+    display: none;
+    width: 30px;
+    height: 26px;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 1199px) {
+        display: flex;
+    }
+}
+
+.burger-line {
+    
+    width: 30px;
+    border: 2px solid $ligthColor;
+    border-radius: 2px;
+}
+
+.burger-line::before {
+    position: absolute;
+    width: 30px;
+    left: 0;
+    top: 0;
+    content: '';
+    border: 2px solid $ligthColor;
+    border-radius: 2px;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.burger-line::after {
+    position: absolute;
+    width: 30px;
+    left: 0;
+    bottom: 0;
+    content: '';
+    border: 2px solid $ligthColor;
+    border-radius: 2px;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}

@@ -1,0 +1,25 @@
+
+// abstracts
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+// base
+@import "./base/base";
+
+// components
+@import "./components/burger";
+@import "./components/buttons";
+@import "./components/checkbox";
+@import "./components/forms";
+@import "./components/radio";
+
+// layout
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/navigation";
+
+// pages
+@import "./pages/contacts";
+@import "./pages/main";
+@import "./pages/tours";
+@import "./pages/trecking";

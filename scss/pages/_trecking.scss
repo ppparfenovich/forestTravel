@@ -1,0 +1,46 @@
+.row-article-page {
+    @include flex($ai: start);
+}
+
+.inner-page-article {
+    flex: 0 0 770px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: $mainTextColor;
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 15px;
+        font-weight: 700;
+        line-height: 1.2;
+   
+    }
+    h1 {
+        margin-bottom: 40px;
+        font-size: 54px;
+        line-height: 1;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    h6 {
+        font-size: 18px;
+    }
+    p {
+        margin-bottom: 15px;
+    }
+    img {
+        margin: 40px 0;
+    }
+    & > *:last-child {
+        margin-bottom: 0;
+    }
+}
+

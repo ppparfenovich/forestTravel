@@ -1,0 +1,55 @@
+.contact-header {
+    margin-bottom: 40px;
+}
+
+.contact-row {
+    @include flex($ai: start);
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: start;
+}
+
+.contact-info {
+    width: 470px;
+}
+
+.contact-block + .contact-block {
+    margin-top: 40px;
+}
+
+.contact-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.contact-block-body a {
+    font-size: 20px;
+}
+
+.contact-list-icon {
+    margin-bottom: 15px;
+    padding-left: 39px;
+    position: relative;
+    a {
+        color: $mainTextColor;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 0;
+        left: 0;
+    }
+    &.phone::before {
+        background-image: url("./../img/icons/phone.svg");
+    }
+    &.email::before {
+        background-image: url("./../img/icons/mail.svg");
+    }
+    &.address::before {
+        background-image: url("./../img/icons/map-pin.svg");
+    }
+}
+

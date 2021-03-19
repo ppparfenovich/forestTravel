@@ -1,0 +1,70 @@
+.inner-page-tours-header {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/* Card */
+.card-link:hover {
+    opacity: 0.8;
+}
+
+.first-row {
+    .card-link {
+        max-width: 48.72%;
+    }
+    .card-link:first-child {
+        margin-right: 30px;
+    }
+}
+
+.cards-row {
+    @include flex;
+    // display: flex;
+    // justify-content: space-between;
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.card-col {
+    max-width: 670px;
+    margin-right: 30px;
+    @include flex($fdir: column);
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    .card-link:first-child {
+        margin-bottom: 30px;
+    }
+}
+
+.second-row.card-link:last-child {
+    max-width: 470px;
+}
+
+.card-title-wrapper {
+    padding: 22px 30px;
+    background-color: #A6A6A6;
+    color: $ligthColor;
+    &.sand-color {
+        background-color: #C1B19B;
+    }
+    &.blue-color {
+        background-color: #66B0BE;
+    }
+    &.brown-color {
+        background-color:#876F56;
+    }
+    &.green-color {
+        background-color: #27695E;
+    }
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 28px;
+    white-space: nowrap;                        /* Текст в одну строку */
+    overflow: hidden;                           /* Обрезаем текст */
+    text-overflow: ellipsis;                    /* Многоточие при обрезке большого текста */
+}
+
