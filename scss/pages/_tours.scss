@@ -18,9 +18,7 @@
 }
 
 .cards-row {
-    @include flex;
-    // display: flex;
-    // justify-content: space-between;
+    @include flex($fw: no-wrap);
     &:not(:last-child) {
         margin-bottom: 30px;
     }
@@ -30,12 +28,13 @@
     max-width: 670px;
     margin-right: 30px;
     @include flex($fdir: column);
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
     .card-link:first-child {
         margin-bottom: 30px;
     }
+}
+
+.second-col {
+    max-width: 40%;
 }
 
 .second-row.card-link:last-child {
@@ -68,3 +67,65 @@
     text-overflow: ellipsis;                    /* Многоточие при обрезке большого текста */
 }
 
+/* tablet */
+
+@media (max-width: 1199px) {
+    .inner-page.tours {
+        padding: 60px 0;
+    }
+    .card-title-wrapper {
+        padding: 15px 20px;
+    }
+    .card-title {
+        font-size: 24px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 899px) {
+    .inner-page.tours {
+        padding: 40px 0 10px;
+    }
+    .inner-page-tours-header {
+        margin-bottom: 40px;
+    }
+    .cards-row{
+        flex-direction: column;
+        &:not(:last-child) {
+            margin-bottom: 0;
+        }
+        .card-link {
+            max-width: 100%;
+            height: 40%;
+            margin-bottom: 30px;
+            &:first-child {
+                margin-right: 0;
+            }
+        }
+    }
+    .card-col {
+        max-width: 100%;
+        margin-right: 0;
+        .card-link {
+            height: 40%;
+        }
+    }
+    .second-col {
+        max-width: 100%;
+    }
+}
+
+/* Mobile XS*/
+
+@media (max-width: 599px) {
+    .inner-page-tours-header {
+        margin-bottom: 30px;
+    }
+    .card-title-wrapper {
+        padding: 12px 15px;
+    }
+    .card-title {
+        font-size: 20px;
+    }
+}
